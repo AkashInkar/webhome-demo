@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:id="@+id/edtname"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_below="@+id/edtname"
+        android:layout_height="wrap_content"
+        android:hint="Enter your address"
+        android:drawablePadding="10dp"
+        android:id="@+id/edtaddress"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your phone"
+        android:layout_below="@+id/edtaddress"
+        android:id="@+id/edtphone"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/edtphone"
+        android:layout_height="wrap_content"
+        android:text="Insert"
+        android:onClick="insertToServer"
+        android:id="@+id/btninsert"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
